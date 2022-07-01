@@ -1,0 +1,161 @@
+<!DOCTYPE html> <!--Tipe html-nya--> <!--Html Tengah-Bagian Tengah-->
+<html>
+ <head>
+  <title> BELAJAR HTML 5 </title>
+
+  <style>
+  body{
+    font-family: sans-serif, verdana;
+    font-size: 10px;
+  }
+  header, nav, main, aside, footer{
+    border:1px solid grey; margin:5px; padding:5px;
+  }
+  main{
+    float: left;
+    width: 50%;
+  }
+  aside{
+    float: left;
+    width: 50%;
+  }
+  footer{
+    clear: both;
+  }
+  </style>
+
+ </head>
+ <body>
+
+   <header>
+     <h1> BELAJAR KODING </h1>
+   </header>
+
+   <!-- Menu WEB -->
+  <nav>
+  <ul>
+   <li><a href="Learning.html" class="menu">Home</a></li>
+   <li><a href="Experiment.html"class="menu">Experiment</a></li>
+   <li><a href="the subfolder/hellohtml.html"class="menu">Hello</a></li>
+   <li><a href="cekumlah.html"class="menu">Belajar</a></li>
+ </ul>
+ </nav>
+
+    <main>
+
+      <article>
+
+        <video width="300" height="300" controls loop autoplay>
+          <source src="Directed By.mp4" type="video/mp4">
+        </video>
+
+        <video width="300" height="300" controls muted poster="gambar koding/ngab owi 01.png">
+          <source src="vid/Screaming Sheep.mp4" type="video/mp4">
+        </video>
+
+        <audio controls autoplay>
+          <source src="vid/ngiong.mp3" type="audio/mp3">
+        </audio>
+
+
+        <h1> MESIN SEARCH </h1>
+        <input type="search" name="search" placeholder="cari...">
+        <input type="email" name="email" placeholder="email..."required>
+        <input type="url" name="url" placeholder="url..."required>
+        <input type="tel" name="tel" id="+62" placeholder="nomor telp..."required>
+        <input type="submit">
+
+        <h1> WAKTU DAN TANGGAL </h1>
+        <input id = "startdate" name = "startdate" min = "2006-01-25" max = "2022-03-23" type = "date">
+        <input id="expiry" name="expiry" type="month" required>
+        <input id="vacation" name="vacation" type="week">
+        <input id="exit-time" name="exit-time" type="time">
+        <input type="datetime">
+        <input id = "arrival-time" name = "arrival-time" type = "datetime-local" >
+
+        <h2> WARNA </h2>
+        <input id = "color" name = "color" type = "color" >
+
+        <h2> TOMBOL </h2>
+        <input id="skill" type="range" min="1" max="100" value="0">
+        <input type="number" min="1" max="20" step="0.1" value="5" name="ukuran">
+
+
+        <figure>
+          <img src="belajar koding.jpg" alt="gambar koding" width="400" height="300">
+          <figcaption>
+            Gambar anak belajar koding
+            <br>
+            <a href="Learning.html"> websiteku </a>
+          </figcaption>
+        </figure>
+
+        <dialog open>
+          Belajarlah di sekolahkoding
+        </dialog>
+
+        <details>
+          <summary>
+            coba klik
+          </summary>
+          <p> info tersembunyi </P>
+        </details>
+
+        <h1> Daftar Belajar </h1>
+
+        <section>
+          <h1> SAYA SEDANG BELAJAR HTML DASAR ONLINE </h1>
+          <p> belajar html dasar </p>
+        </section>
+
+        <section>
+          <h2> SAYA SEDANG BELAJAR HTML 5 ONLINE </h2>
+          <p> belajar html 5 </p>
+        </section>
+
+        <section>
+          <h3> SAYA SEDANG BELAJAR CSS ONLINE </h3>
+          <p> belajar css dasar </p>
+        </section>
+
+        <section>
+          <h4> SAYA SEDANG BELAJAR CSS 3 ONLINE </h4>
+          <p> belajar css 3 </p>
+        </section>
+       </article>
+
+     </main>
+
+  <!-- Bagian link website -->
+  <aside>
+   <p> SELAMAT DATANG DI BELAJAR CODING </p>
+   <a href="https://facebook.com" id="linkfb"> FACEBOOK-KU </a> <br>
+   <a href="https://twitter.com" target="_blank" id="linktw"> TWITTER-KU </a> <br>
+   <img src="gambar koding/anak mark zuckerberg.jpg" height="100" width="100"> <br>
+   <img src="belajar koding.jpg" height="100" width="100"> <br>
+   <iframe src="Learning.html" height="500" width="500"></iframe>
+  </aside>
+
+
+
+  <table border="4">
+   <caption>  BARANG YANG DIBELI </caption>
+   <tr>
+     <th>Nama perlengkapan sekolah</th>
+     <th>Tempat membeli</th>
+     <th>Harga</th>
+   </tr>
+   <tr>
+     <td> Buku </td>
+     <td> Toko alat tuls </td>
+     <td> 10.000 </td>
+   </tr>
+  </table>
+
+
+  <footer>
+    <p id="copyright"> &copy; inisial &#8490; </p>
+  </footer>
+
+</body>
+</html>
