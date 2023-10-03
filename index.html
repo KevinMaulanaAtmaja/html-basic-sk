@@ -1,0 +1,159 @@
+<!DOCTYPE html> <!--    Tipe html-nya (HTML 5)-->
+<html>
+    <head>
+        <title> BELAJAR KODING </title>
+    </head>
+
+    <body>
+
+        <!-- Menu WEB -->
+        <div id="menu_learning">
+            <a href="Learning.html" class="menu">Home</a>
+            <a href="Experiment.html"class="menu">Experiment</a>
+            <a href="subfolder/hellohtml.html"class="menu">Hello</a>
+            <a href="css-dasar1.html"class="menu">CSS Dasar 1</a>
+            <a href="css-dasar2.html"class="menu">CSS Dasar 2</a>
+            <a href="bootstrap-copas.html" class="menu">Bootstrap Copas</a>
+        </div>
+
+        <!-- Tag Heading -->
+        <h1>Tag Heading 1</h1>
+        <h2>Tag Heading 2</h2>
+        <h3>Tag Heading 3</h3>
+        <h4>Tag Heading 4</h4>
+        <h5>Tag Heading 5</h5>
+        <h6>Tag Heading 6</h6>
+
+        <!-- Tag Paragraf -->
+        <p>Tag Paragraf</p>
+
+        <!-- Tag utk Link -->
+        <a href="https://nivek-web.000webhostapp.com">Tag Link</a>
+        <a href="https://www.google.com" target="_blank">Tag utk Link yg dibuka di Tab baru</a>
+        
+        <!-- Tag utk menampilkan gambar -->
+        <div>
+            <img src="./gambar-koding/anak-mark-zuckerberg.jpg" alt="anak mark zuckerberg" >
+            <img src="./gambar-koding/belajar koding.jpg" height="100" width="100">
+        </div>
+        <!-- Tag utk menampilkan iframe -->
+            <iframe src="https://nivek-web.000webhostapp.com" height="500" width="500"></iframe>
+        
+        <!-- Bagian penjelasan Format Text -->
+        <!-- referensi web html formatting -->
+        <!-- https://www.w3schools.com/html/html_formatting.asp -->
+        <div>
+            <p> Format tebal menggunakan <b>BOLT</b> atau (Tebal) </p>
+            <p> Format tekanan menggunakan <em>EM</em> atau (Ditekan) </p>
+            <p> Format miring menggunakan <i>ITALIC</i> atau (Miring) </p>
+        </div>
+
+        <!-- elemen inline dan block -->
+        <div>
+            <p> Fungsi (br) utk membuat jarak <br> seperti ini guys </p>
+            <p> Fungsi (div) atau divisi utk <b> mengelompokkan/membuat grup-grup </b> </p>
+            <p> Fungsi (span) adlh utk tdk membentuk baris elemen baru yg digunakan utk mengelompokkan bbrp elemen.  </p>
+            <p> Fungsi tanda ( <!-- --> ) atau ( < ! ---- > ) atau tanda komentar pada html utk memberikan komentar di html/bagian tertentu. <p>
+        </div>
+
+    <!-- Tag Table  -->
+    <table border="2">
+        <caption>  BARANG YANG DIBELI </caption>
+        <tr>
+            <th>Nama perlengkapan sekolah</th>
+            <th>Tempat membeli</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td> Buku </td>
+            <td> Toko alat tulis </td>
+            <td> 5.000 </td>
+        </tr>
+        <tr>
+            <td> Pensil </td>
+            <td> Toko alat tulis </td>
+            <td> 1.000 </td>
+        </tr>
+    </table>
+
+    <!-- Order List (List yg ber-urutan) -->
+    <ol>
+        <li> Order List (List yg ber-urutan) </li>
+        <li> Contoh baris </li>
+        <li> list seperti memberi nomor/list yg ber-urutan  pada web </li>
+    </ol>
+
+    <!-- Unorder List (List yg tdk ber-urutan) -->
+    <ul>
+        <li> Unorder List (List yg tdk ber-urutan) </li>
+        <li> Contoh baris </li>
+        <li> list seperti memberi nomor/list yg tdk ber-urutan  pada web </li>
+    </ul>
+    <!-- Data List  -->
+    <!-- dd -> definition list, dt -> definition term, dd -> definition description -->
+    <dl>
+        <dt> contoh penggunaan DataList(dl) : </dt>
+        <dd> membeli buku tulis </dd>
+        <dd> membeli pensil </dd>
+        <dd> membeli penghapus </dd>
+    </dl>
+
+    <!-- charset, symbol, entities -->
+    <!-- https://www.w3schools.com/html/html_charset.asp -->
+    <p id="copyright"> &copy; inisial &#8490; </p>
+
+
+    <!-- tag Form  -->
+    <form>
+        <input type="text" placeholder="Nama..."> 
+        <br>
+        <textarea cols="100" rows="10"> Tag Textarea</textarea>
+    </form>
+
+    <!-- attribute label dan id  -->
+    <label for="input-text">Tag Label dan id-nya</label>
+        <input type="text" placeholder="Nama..." id="input-text">
+    <br>
+
+    <!-- tag checkbox dan radio -->
+    <label>Hobi</label>
+    <input type="checkbox" name="hobi" id="0"> Coding
+    <input type="checkbox" name="hobi" id="1"> Desain
+    <input type="checkbox" name="hobi" id="2"> Freelancer
+    <br>
+    <label>Gender</label>
+    <input type="radio" name="gender" id="o"> Laki-laki 
+    <input type="radio" name="gender" id="1"> Perempuan 
+    <input type="radio" name="gender" id="2"> Rahasia 
+    <br>
+
+    <!-- tag select dan option  -->
+    <select>
+        <Option value="html">HTML</Option>
+        <Option value="css">CSS</Option>
+        <Option value="js">JS</Option>
+    </select>
+    <br>
+    <!-- option group -->
+    <select>
+        <optgroup label="Framework">
+            <Option value="bootstrap">Bootstrap</Option>
+            <Option value="tailwind">Tailwind</Option>
+            <Option value="bulma">Bulma</Option>
+        </optgroup>
+        <optgroup label="DBMS">
+            <Option value="my-sql">My SQL</Option>
+            <Option value="tailwind">Workbench</Option>
+            <Option value="mongo-db">Mongo DB</Option>
+        </optgroup>
+    </select>
+    <br>
+
+    <!-- button submit, fieldset, legend -->
+    <fieldset>
+        <legend> Utk memberi judul pada Fieldset</legend>
+        <p>Fieldset utk mengelompokkan form </p>
+        <input type="submit" value="Kirim Data">
+    </fieldset>
+</body>
+</html>

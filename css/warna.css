@@ -1,0 +1,308 @@
+/* eps 1 */
+/* 
+inline: langsung pada tag 
+internal: di file html yg sama 
+external: di file css sendiri 
+*/
+
+/*eps2*/
+/* selector{
+  property: value;
+} */
+h2{
+  color: aquamarine;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/*eps3*/
+/* id dan class */
+/* 
+#id{
+  property: value;
+}
+.class{
+  property: value;
+} 
+*/
+#link_web1{
+  background: yellow;
+}
+.link_web{
+  background: white;
+}
+
+
+/*eps4*/
+/* background-color */
+#menu_learning{
+  /* background-color: red;
+  background-color: #dddfde; */
+  background-color: rgb(55,6,218);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*eps5*/
+/* background image */
+body{
+  background-color: grey;
+  background-image: url("../gambar-koding/anak-mark-zuckerberg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+/* bg-img shorthand */
+/*selector{
+  background: url("gambar.jpg") no-repeat fixed left;
+}*/
+
+
+/*
+cara komentar di css 1 baris
+atau lebih dari 1 baris
+*/
+
+
+/*eps6*/
+/* text decoration */
+/* cari property text decoration css lainnya di google */
+#text{
+  text-align: justify;
+  text-decoration: underline;
+  text-indent: 20px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  line-height: 20px;
+  word-spacing: 3px;
+}
+
+/*eps7*/
+/* font decoration */
+/* cari property font decoration css lainnya di google */
+#font{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
+/*eps8*/
+/* kondisi link */
+/* css tambahan class menu  */
+.menu{
+  display:inline-block;
+  text-decoration: none;
+
+  /*border-width: 5px;
+  border-style: solid;
+  border-color: black;*/
+
+  border: 5px solid black;
+  padding: 10px 5px;
+}
+
+/*kondisi biasa*/
+.menu:link{
+  background: white;
+  color: yellow;
+}
+
+/*kondisi setelah dikunjungi*/
+.menu:visited{
+  background: aqua;
+}
+
+/*kondisi hover (mouse berada diatasnya)*/
+.menu:hover{
+  background: green;
+
+}
+/*kondisi saat di klik*/
+.menu:active{
+  background: white;
+}
+
+
+/*eps9*/
+/* Min-Max (Width-Height)
+Display Inline-Block, Inline, Block */
+#min-max{
+  background: blue;
+  width: 700px;
+  height: 10px;
+  max-width: 50%;
+  min-height: 50px;
+}
+
+#inline-block{
+    background: orange;
+    color: purple;
+    display: inline-block;
+    width: 100%;
+}
+
+#inline{
+    background: red;
+    display: inline;
+    width: 100%;
+}
+
+#block{
+    background: blue;
+    display: block;
+    width: 100%;
+}
+
+/* eps12 */
+/* menghilangkan elemen  */
+#none{
+  /* visibility: hidden; */
+  display: none;
+}
+
+
+
+
+
+/* box model */
+.box-model{
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  background: red;
+  color: white;
+  /* style tambahan box-model */
+}
+/* margin */
+#margin{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 210px;
+  margin-left: 210px;
+  /* margin: 20px; */
+}
+/* padding */
+#padding{
+  /* padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px; */
+  padding: 40px 20px;
+}
+/* border */
+#border{
+  /* border-top: 5px solid green;
+  border-bottom: 5px solid blue;
+  border-right: 5px solid blueviolet;
+  border-left: 5px solid orange; */
+  /* border-width: 3px;
+  border-style:dotted;
+  border-color: blue; */
+  border: 5px solid black;
+}
+
+
+
+
+/*mengatur posisi di css*/
+/*static, relative, absolute, fixed*/
+/* posisi static = posisi elemen secara default  */
+
+#posisi-relative{
+  /* posisi relative bisa menggunakana property top, bottom, left, right dan tdk berpengaruh ke elemen lainnya */
+  position: relative;
+  background: blue;
+  color: white;
+  top: 20px;
+  left: 300px;
+}
+
+#posisi-absolute{
+  /* posisi relative bisa menggunakana property top, bottom, left, right tpi berpengaruh ke elemen lainnya */
+  position: absolute;
+  background: green;
+  color: white;
+  top: 80px;
+  left: 350px;
+}
+
+#posisi-fixed{
+  /* tdk akan ikut saat di scroll */
+  position: fixed;
+  background: orange;
+  color: white;
+  top: 90px;
+  left: 450px;
+}
+
+
+
+
+/* absolute menambahkan elemen dari parentnya */
+#parent_absolute{
+  position: relative;
+  top: 400px;
+  left: 20px;
+  border: 5px solid black;
+}
+
+.child{
+  position: absolute;
+  background: cyan;
+  top: 100px;
+}
+
+
+/* fixed tidak menambahkan elemen dari parentnya */
+#parent_fixed{
+  position: relative;
+  border: 5px solid black;
+}
+
+.child2{
+  position: fixed;
+  background: yellow;
+  top: 50px;
+}
+
+
+.z-index-minus{
+  position: fixed;
+  background: rgb(255, 174, 0);
+  z-index: -1;
+  top: 150px;
+}
+.z-index-plus{
+  position: fixed;
+  background: rgb(0, 195, 255);
+  z-index: 1;
+  top: 200px;
+}
+
+
+.table{
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.table2{
+  float:right;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+
+/* utk menghilangkan efek float ke elemen brktnya */
+/* #table{
+  margin:  20px;
+  clear: both;
+} */
+
+
+#copyright{
+  clear: both;
+  text-align: center;
+}

@@ -1,0 +1,76 @@
+/* jika menggunakan lebih dari 1 selektor  */
+h1, h2{
+color:red;
+margin: 10px 30px;
+}
+
+/* utk memilih elemen di bwh elemen tertentu  */
+.dbwh-elemen-trtntu a{
+  background: yellow;
+}
+/* div a{
+  background: yellow;
+} */
+
+/* utk memilih langsung dibwh parentnya */
+.dbwh-parentnya > a{
+  background: cyan;
+}
+/*div > a{
+  background:red;
+}*/
+
+/* utk memilih(memberi style) setelah elemen pertama yg dipilih */
+.stlah-elemen + .elemen-kedua{
+  background: rgb(0, 255, 157);
+}
+/*div + div{
+  background:green;
+}*/
+
+
+/* memilih semua bagian yang ada dibwhnya */
+.semua-bag-dibwhnya ~ p{
+  background: rgb(179, 73, 170);
+}
+/*div ~ p{
+  background:blue;
+}*/
+
+/* referensi css selector lengkap */
+/* www.w3schools.com/cssref/css_selectors.asp */
+
+/* Effect Hover  */
+/* hover ke diri sendiri */
+.hover-ke-diri-sendiri :hover{
+  color:black;
+}
+
+/* hover ke elemen lain */
+#elemen1:hover + #elemen2{
+  color: green;
+}
+  /* + langsung setelah */
+/* h1:hover + h2{
+  color:green;
+} */
+
+  /* > langsung didalam */
+/*div:hover > a{
+  color:pink;
+}*/
+
+  /* (space) berada disuatu tempat (dalam container) */
+/* div:hover a{
+  color:yellow;
+} */
+
+/* Effect Fokus */
+input:focus{
+  background: green;
+}
+
+textarea:focus{
+  background: grey;
+  cursor:pointer;
+}

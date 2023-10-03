@@ -1,0 +1,19 @@
+body{
+    font: 16px/20px, arial, sans-serif;
+    background-color: aquamarine;
+    color: #333;
+}
+.container{
+    width: 800px;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+.header{
+    padding: 20px;
+}
+
+.header .judul{
+    font-size: 35px;
+    font-weight: bold;
+}
